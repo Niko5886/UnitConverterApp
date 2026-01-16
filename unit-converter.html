@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертор на мерни единици</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="unit-converter.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Анимиран Mesh фон -->
+        <div class="mesh-background">
+            <div class="mesh-gradient mesh-1"></div>
+            <div class="mesh-gradient mesh-2"></div>
+            <div class="mesh-gradient mesh-3"></div>
+            <div class="mesh-gradient mesh-4"></div>
+        </div>
+        
+        <!-- Хедър -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon-wrapper">
+                        <i class="fas fa-exchange-alt logo-icon"></i>
+                    </div>
+                    <div class="header-text">
+                        <h1>Unit Converter</h1>
+                        <p class="subtitle">Преобразуване на единици в реално време</p>
+                    </div>
+                </div>
+                <button class="theme-toggle" id="themeToggle" title="Преключи тема">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Навигация -->
+        <nav class="app-navigation glass-effect">
+            <div class="nav-container">
+                <button class="nav-link glass-button active" data-category="length">
+                    <i class="fas fa-ruler"></i>
+                    <span>Дължина</span>
+                </button>
+                <button class="nav-link glass-button" data-category="weight">
+                    <i class="fas fa-weight"></i>
+                    <span>Тежест</span>
+                </button>
+                <button class="nav-link glass-button" data-category="temperature">
+                    <i class="fas fa-thermometer-half"></i>
+                    <span>Температура</span>
+                </button>
+                <button class="nav-link glass-button" data-category="volume">
+                    <i class="fas fa-fill-drip"></i>
+                    <span>Обем</span>
+                </button>
+                <button class="nav-link glass-button" data-category="area">
+                    <i class="fas fa-square"></i>
+                    <span>Площ</span>
+                </button>
+                <button class="nav-link glass-button" data-category="speed">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Скорост</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Основен контент -->
+        <main class="app-main">
+            <div class="main-container">
+                <div class="converter-card glass-effect">
+                    <div class="card-gradient"></div>
+                    <div id="converter-area"></div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Футър -->
+        <footer class="app-footer glass-effect">
+            <p>Unit Converter © 2026 | Създадено с <i class="fas fa-heart"> </i> от Н. Стоянов </p>
+        </footer>
+    </div>
+
+    <script src="unit-converter.js"></script>
+</body>
+</html>
